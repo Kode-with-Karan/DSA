@@ -21,6 +21,8 @@ int factorial(int num){
 
     // recursive relation
     int fact_num = num*factorial(num-1);
+
+    return fact_num;
 }
 
 int main(){
@@ -29,7 +31,7 @@ int main(){
 
     cout << "Enter the number:- ";
     cin >> num;
-    
+
     cout << "Factorial of the "<< num << endl;
     ans = factorial(num);
 
