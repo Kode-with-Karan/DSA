@@ -7,7 +7,7 @@ void swapch(char& a, char& b){
     b = temp;
 }
 
-void Palandrome(string& str,int start, int end){
+void revString(string& str,int start, int end){
 
     if(start > end){
         return ;
@@ -17,7 +17,7 @@ void Palandrome(string& str,int start, int end){
     start++;
     end--;
 
-    return Palandrome(str,start, end);
+    return revString(str,start, end);
 
     
 }
@@ -27,7 +27,7 @@ int main(){
     string str = "karan";
 
 
-    Palandrome(str, 0, str.length()-1);
+    revString(str, 0, str.length()-1);
 
     cout << str << endl;
 }
